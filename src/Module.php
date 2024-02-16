@@ -32,9 +32,9 @@ class Module
         $serviceManager = $application->getServiceManager();
 
         $client = $serviceManager->get(Client::class);
-        if (!$client->extensionLoaded()) {
-            return;
-        }
+//        if (!$client->extensionLoaded()) {
+//            return;
+//        }
 
         /* @var $eventManager \Laminas\EventManager\EventManager */
         $eventManager = $application->getEventManager();
